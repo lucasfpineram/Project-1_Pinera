@@ -28,6 +28,8 @@
   header {
     background-color: var(--color-header);
     padding: 20px;
+    width: 100%;
+    height: auto;
   }
   
   header h1 {
@@ -54,7 +56,6 @@
   
   .instagram-link:hover {
     color: var(--color-link-hover);
-    transform: scale(1.05);
   }
   
   .image-grid {
@@ -129,5 +130,7 @@
     background-color: var(--color-footer);
     color: var(--color-texto-principal);
     border-top: 2px solid #ccc;
+    width: 100%;
+    height: auto;;
   }
   
