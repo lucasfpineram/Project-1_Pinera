@@ -1,136 +1,123 @@
-:root {
-    --color-fondo: #fdf8f2;
-    --color-header: #fef6e4;
-    --color-texto-principal: #2a2a2a;
-    --color-acento: #f4a261;
-    --color-link: #a1c181;
-    --color-link-hover: #588157;
-    --color-titulo: #7d5a50;
-    --color-subtitulo-bg: #ffe8d6;
-    --color-subtitulo-borde: #e07a5f;
-    --color-footer: #e6ebe0;
-  }
-  
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
-    background-color: var(--color-fondo);
-    color: var(--color-texto-principal);
-  }
-  
-  .container {
-    margin: 0;
-    padding: 20px;
-    width: 90%;
-  }
-  
-  header {
-    background-color: var(--color-header);
-    padding: 20px;
-    width: 100%;
-    height: auto;
-  }
-  
-  header h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
-    color: var(--color-titulo);
-  }
-  
-  .text-block {
-    margin-bottom: 40px;
-    line-height: 1.6;
-  }
-  
-  .text-block p {
-    font-size: 18px;
-  }
-  
-  .instagram-link {
-    color: var(--color-link);
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
-    font-weight: bold;
-  }
-  
-  .instagram-link:hover {
-    color: var(--color-link-hover);
-  }
-  
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    margin-bottom: 40px;
-  }
-  
-  .image-grid img,
-  .image-full {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    border: 3px solid var(--color-acento);
-    transition: transform 0.3s ease, filter 0.3s ease;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  .image-small {
-    max-width: 400px;
-    aspect-ratio: auto;
-    height: auto;
-  }  
-  
-  .image-grid img:hover,
-  .image-full:hover {
-    transform: scale(1.05);
-    filter: brightness(1.1);
-  }
-  
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fdf8f2;
+  color: #2a2a2a;
+}
 
-  .image-full {
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .caption {
-    margin-top: 10px;
-    font-size: 16px;
-    text-align: center;
-    color: var(--color-texto-principal);
-  }
-  
-  .highlight-text h2 {
-    font-size: 28px;
-    margin-bottom: 40px;
-    text-align: left;
-    color: var(--color-texto-principal);
-    background-color: var(--color-subtitulo-bg);
-    padding: 10px;
-    border-left: 5px solid var(--color-subtitulo-borde);
-  }
-  .belts-section {
-    padding-bottom: 60px;
-  }
-  
-  
-  ul {
-    margin-left: 20px;
-    margin-bottom: 20px;
-  }
-  
-  ul li {
-    margin-bottom: 10px;
-  }
-  
-  .footer {
-    text-align: center;
-    font-weight: bold;
-    padding: 20px;
-    background-color: var(--color-footer);
-    color: var(--color-texto-principal);
-    border-top: 2px solid #ccc;
-    width: 100%;
-    height: auto;;
-  }
-  
+.container {
+  margin: 0;
+  padding: 20px;
+  width: 90%;
+}
+
+header {
+  background-color: #fef6e4;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #7d5a50;
+}
+
+.text-block {
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.text-block p {
+  font-size: 18px;
+}
+
+.instagram-link {
+  color: #a1c181;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+}
+
+.instagram-link:hover {
+  color: #588157;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+.image-grid img,
+.image-full {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 3px solid #f4a261;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image-small {
+  max-width: 400px;
+  aspect-ratio: auto;
+  height: auto;
+}  
+
+.image-grid img:hover,
+.image-full:hover {
+  transform: scale(1.05);
+}
+
+.image-full {
+  display: block;
+  margin: 0 auto;
+}
+
+.caption {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  color: #2a2a2a;
+}
+
+.highlight-text h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: left;
+  color: #2a2a2a;
+  background-color: #ffe8d6;
+  padding: 10px;
+  border-left: 5px solid #e07a5f;
+}
+
+.belts-section {
+  padding-bottom: 60px;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #e6ebe0;
+  color: #2a2a2a;
+  border-top: 2px solid #ccc;
+  width: 100%;
+  height: auto;
+}
